@@ -1,0 +1,9 @@
+.PublicHeadTips {
+    width: 100%;
+    height: 45px;
+    background: rgb(237, 232, 248);
+    transition: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
