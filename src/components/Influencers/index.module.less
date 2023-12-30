@@ -1,4 +1,4 @@
-.Features {
+.Influencers {
     width: 100%;
     margin-top: 20px;
 
@@ -10,11 +10,12 @@
 
     &_main {
         height: 100%;
+        text-align: center;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
 
         &_box {
-            // display: flex;
-            // flex-direction: column;
-            // align-items: center;
 
             &_image {
                 border-radius: 10px;
@@ -38,14 +39,11 @@
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    /* Keep this to ensure the horizontal scroll */
 }
 
 .FeaturesRow_items {
     width: 400px;
     display: inline-block;
     white-space: normal;
-    /* Allow text to wrap within each item */
     overflow: hidden;
-    /* Prevent text from spilling out of the box */
 }

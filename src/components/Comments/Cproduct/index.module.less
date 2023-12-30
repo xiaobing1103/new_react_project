@@ -1,0 +1,62 @@
+.CproductBox {
+    margin-top: 20px;
+
+    &_header {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    &_main {
+        height: 100%;
+        margin: 20px 0;
+
+        &_box {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            position: relative;
+            cursor: pointer;
+
+            &_span1 {
+                padding: 0 10px;
+            }
+
+            &_span2 {
+                padding: 0 10px;
+            }
+
+            &_span3 {
+                width: 3px;
+                height: 100%;
+                position: absolute;
+                right: -3px;
+                background-color: rgb(227, 45, 45);
+            }
+        }
+
+        &_right {
+            &_header {
+                &_col1 {
+                    background-color: rgb(2, 166, 0);
+                    text-align: center;
+                    color: #fff;
+                }
+
+                &_col2 {
+                    background-color: rgb(230, 26, 26);
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+
+            &_contentBox {
+                overflow-y: scroll;
+                overflow-x: hidden;
+                height: 300px;
+            }
+
+        }
+    }
+}

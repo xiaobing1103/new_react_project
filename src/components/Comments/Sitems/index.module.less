@@ -1,0 +1,34 @@
+.Sitems {
+    &_header {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    &_main {
+        height: 250px;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        &_listbox {
+            // display: flex;
+            height: 40px;
+            line-height: 40px;
+            cursor: pointer;
+            position: relative;
+
+            &_popover {
+                display: none;
+                position: absolute;
+                width: 400px;
+                height: 200px;
+                bottom: 0;
+                background-color: bisque;
+                border-radius: 10px;
+            }
+        }
+        &_listbox:hover &_listbox_popover {
+            display: block;
+        }
+    }
+}
+
