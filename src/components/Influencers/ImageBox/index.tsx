@@ -1,9 +1,12 @@
-import { FileImageOutlined, PushpinOutlined } from '@ant-design/icons'
-import { Avatar, Col, Row, Image, Card } from 'antd'
+import { FileImageOutlined, LeftOutlined, PushpinOutlined, RightOutlined } from '@ant-design/icons'
+import { Avatar, Col, Row, Image, Card, Button } from 'antd'
+import Carousel, { CarouselRef } from 'antd/es/carousel';
+import { useRef } from 'react';
 import image from '../../../assets/images/44.png'
 import style from './index.module.less'
 
 function ImageBox() {
+    const carouselRefs = useRef<CarouselRef>(null);
 
     return <div className={style.ImageBox}>
         <Card>
@@ -33,7 +36,33 @@ function ImageBox() {
                 </Row>
                 <Row style={{ margin: '10px 0' }}>
                     <Col span={24}>
-                        <Image src={image} />
+                        {
+
+                            <div style={{ position: 'relative' }}>
+                                <Button
+                                    className={style.btnstyle}
+                                    style={{ left: 5 }}
+                                    onClick={() => {
+                                        carouselRefs?.current?.prev()
+                                    }}
+                                    icon={<LeftOutlined />}
+                                ></Button>
+                                <Button
+                                    className={style.btnstyle}
+                                    style={{ right: 5 }}
+                                    onClick={() => {
+
+                                        carouselRefs?.current?.next()
+                                    }}
+                                    icon={<RightOutlined />}
+                                ></Button>
+                                <Carousel ref={carouselRefs} dots={false}>
+                                    <Image src={image} />
+                                    <Image src={image} />
+                                    <Image src={image} />
+                                </Carousel>
+                            </div>
+                        }
                     </Col>
                 </Row>
             </header>

@@ -43,6 +43,7 @@ function Sitems(props: PropsType) {
             }
         }
     }
+    const conicColors = { '0%': '#87d068', '50%': '#ffe58f', '100%': '#ffccc7' };
 
     return (
         < div className={style.SitemsBox}>
@@ -71,7 +72,7 @@ function Sitems(props: PropsType) {
                                                             <RightOutlined style={{ fontSize: 10 }} />
                                                         </Col>
                                                         <Col span={14} className={style.Sitems_main_listbox_right}>
-                                                            <Progress percent={listsItems.process} />
+                                                            <Progress strokeColor={conicColors} percent={listsItems.process} />
                                                         </Col>
                                                     </Row>
                                                 </div>

@@ -28,6 +28,7 @@ export type DataTypeTwo = {
     image: string;
     Price: string;
     Features: string;
+    imagesdesc?: string;
     Performance: string;
     fontSize?: undefined;
     fontWight?: undefined;
@@ -37,7 +38,9 @@ export type DataTypeTwo = {
 export const mockdata: (DataTypeOne | DataTypeTwo)[] = [
     { key: '123', Price: 'Price', Features: 'Features', Performance: 'Performance', fontSize: '18px', fontWight: '600' },
     {
-        key: '124', name: 'New Balance 550', image: pic1,
+        key: '124', name: 'New Balance 550',
+        image: pic1,
+        imagesdesc: 'Sponsored',
         Price: '170 Euro, increasing over and over',
         Features: 'Not mentioned',
         Performance: 'New Balance 550 has lost popularity due to the large number of similar colorways and lack of comfort.'

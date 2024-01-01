@@ -1,0 +1,30 @@
+.FeaturesRow_items {
+    width: 400px;
+    display: inline-block;
+    white-space: normal;
+    /* Allow text to wrap within each item */
+    overflow: hidden;
+    /* Prevent text from spilling out of the box */
+}
+
+.FeaturesRow_items {
+    &_box {
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+
+        &_image {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        &_pBox {
+            margin: 10px 0;
+
+            // width: 70%;
+            &_span1 {
+                font-weight: 500;
+            }
+        }
+    }
+}

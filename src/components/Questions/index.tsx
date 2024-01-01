@@ -24,6 +24,6 @@ function Questions() {
             </div>
         </>
     )
-}
+}   
 
 export default Questions

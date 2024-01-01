@@ -15,6 +15,7 @@ function Products() {
     type selectedType = "All" | "Organic" | "Sponsored" | undefined
     const [size, setSize] = useState<selectedType>('All');
     const onChange = (e: RadioChangeEvent) => {
+        console.log(e)
         setSize(e.target.value);
     };
 
