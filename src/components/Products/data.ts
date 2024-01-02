@@ -20,6 +20,7 @@ export type DataTypeOne = {
     fontWight: string;
     name?: undefined;
     image?: undefined;
+    sum?: number
 };
 
 export type DataTypeTwo = {
@@ -32,6 +33,8 @@ export type DataTypeTwo = {
     Performance: string;
     fontSize?: undefined;
     fontWight?: undefined;
+    sum?: number
+
 };
 
 
@@ -43,12 +46,15 @@ export const mockdata: (DataTypeOne | DataTypeTwo)[] = [
         imagesdesc: 'Sponsored',
         Price: '170 Euro, increasing over and over',
         Features: 'Not mentioned',
-        Performance: 'New Balance 550 has lost popularity due to the large number of similar colorways and lack of comfort.'
+        Performance: 'New Balance 550 has lost popularity due to the large number of similar colorways and lack of comfort.',
+        sum: 3
     },
     {
         key: '125',
         name: 'New Balance 2002 R',
         image: pic2,
+        imagesdesc: 'Sponsored',
+
         Price: 'Not mentioned',
         Features: 'Trending upwards, looks great, very comfortable, versatile, can be worn with many different outfits.',
         Performance: 'Trending upwards, looks great, very comfortable, versatile, can be worn with many different outfits.'
@@ -59,6 +65,8 @@ export const mockdata: (DataTypeOne | DataTypeTwo)[] = [
         image: pic3,
         Price: 'Not mentioned',
         Features: 'Not mentioned',
+        imagesdesc: 'Sponsored',
+
         Performance: 'New Balance 550 has lost popularity due to the large number of similar colorways and lack of comfort.'
     },
     {
@@ -66,6 +74,8 @@ export const mockdata: (DataTypeOne | DataTypeTwo)[] = [
         name: 'New Balance 990 V6',
         image: pic4,
         Price: 'Not mentioned',
+        imagesdesc: 'Sponsored',
+
         Features: 'Comfortable, looks good on feet.',
         Performance: 'The host mentions that the New Balance 990 V6 is one of the most comfortable shoes they have ever worn.'
     },

@@ -43,3 +43,121 @@
     white-space: normal;
     overflow: hidden;
 }
+
+.Productstable {
+    display: flex;
+    align-items: center;
+
+    &_items {
+        text-align: center;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+
+
+        &_box {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            display: inline-block;
+            white-space: normal;
+            overflow: hidden;
+            // margin: 0 1px;
+
+            &_image {
+                width: 300px;
+                border-radius: 15px;
+                height: 125px;
+                // padding: 10px;
+                box-sizing: border-box;
+            }
+
+            &_name {
+                display: flex;
+                height: 67px;
+                font-size: 18px;
+                background-color: rgb(237, 237, 237);
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &_span2 {
+                    background-color: rgb(250, 250, 250);
+                    width: 50px;
+                    margin-right: 10px;
+                    border: 1px solid black;
+                }
+            }
+
+            &_Price {
+                background-color: rgb(237, 237, 237);
+                text-align: start;
+                height: 30px;
+                width: 300px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            &_Features {
+                background-color: rgb(255, 255, 255);
+                height: 70px;
+                text-align: start;
+                vertical-align: middle;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                /* 限制在3行 */
+                overflow: hidden;
+                width: 300px;
+                /* 定义容器宽度 */
+            }
+
+            &_Performance {
+                height: 63px;
+                background-color: rgb(237, 237, 237);
+                vertical-align: middle;
+                text-align: start;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                /* 限制在3行 */
+                overflow: hidden;
+                width: 300px;
+                /* 定义容器宽度 */
+            }
+        }
+    }
+}
+
+.btnstyle {
+
+    border: none !important;
+    height: 30px !important;
+    width: 30px !important;
+    transition: 1s !important;
+    border-radius: 50% !important;
+    background-color: transparent !important;
+    color: #ffffff !important;
+    position: absolute !important;
+    top: 50% !important;
+    z-index: 10 !important;
+    transform: translateY(-50%) !important;
+    opacity: 0.6 !important
+}
+
+.btnstyle:hover {
+    opacity: 1 !important
+}
+
+.imagesdesc {
+    position: absolute;
+    background-color: rgb(235, 234, 233);
+    padding: 2px;
+    z-index: 10 !important;
+    transform: translateY(-50%) !important;
+    top: 14% !important;
+    left: 3%;
+    font-size: 12px;
+}

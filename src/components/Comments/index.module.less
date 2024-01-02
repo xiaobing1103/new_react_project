@@ -22,3 +22,152 @@
 .allMargin {
     margin-top: 20px;
 }
+
+.Sitems {
+    &_header {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    &_main {
+        height: 250px;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        &_listbox {
+            // display: flex;
+            height: 40px;
+            line-height: 40px;
+            cursor: pointer;
+            position: relative;
+
+            &_popover {
+                display: none;
+                position: absolute;
+                width: 400px;
+                height: 200px;
+                bottom: 0;
+                background-color: bisque;
+                border-radius: 10px;
+            }
+        }
+
+        &_listbox:hover &_listbox_popover {
+            display: block;
+        }
+    }
+}
+
+.Details {
+    &_mainBox {
+        display: flex;
+        flex-direction: column;
+
+        &_header {
+            display: flex;
+        }
+
+    }
+}
+
+
+.DetailsBox {
+    max-width: 700px;
+    min-width: 500px;
+}
+
+.CproductBox {
+    margin-top: 20px;
+
+    &_header {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    &_main {
+        height: 100%;
+        margin: 20px 0;
+
+        &_box {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            position: relative;
+            cursor: pointer;
+
+            &_span1 {
+                padding: 0 10px;
+            }
+
+            &_span2 {
+                padding: 0 10px;
+            }
+
+            &_span3 {
+                width: 3px;
+                height: 100%;
+                position: absolute;
+                right: -3px;
+                background-color: rgb(227, 45, 45);
+            }
+        }
+
+        &_right {
+            &_header {
+                &_col1 {
+                    background-color: rgb(2, 166, 0);
+                    text-align: center;
+                    color: #fff;
+                }
+
+                &_col2 {
+                    background-color: rgb(230, 26, 26);
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+
+            &_contentBox {
+                overflow-y: scroll;
+                overflow-x: hidden;
+                height: 300px;
+            }
+
+        }
+    }
+}
+
+.UserComments {
+    padding: 10px;
+
+    &_rightBox {
+        display: flex;
+
+        &_span1 {
+            margin: 0 10px;
+        }
+
+        &_span2 {
+            font-size: 10px;
+            color: #888;
+            display: flex;
+            align-items: center;
+            margin: 0 10px;
+        }
+    }
+
+    &_content {
+        vertical-align: middle;
+        text-align: start;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        /* 限制在3行 */
+        overflow: hidden;
+        padding: 0 10px;
+        width: 100%;
+        /* 定义容器宽度 */
+    }
+}

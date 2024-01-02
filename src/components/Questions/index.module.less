@@ -20,3 +20,45 @@
 .allMargin {
     margin-top: 20px;
 }
+.Chat {
+    width: 100%;
+
+    &_msg {
+        height: 400px;
+
+        &_myMessage {
+            max-width: 700px;
+            display: flex;
+            margin: 10px 0;
+
+            &_avatarBox {
+                margin-right: 10px;
+            }
+
+            &_content {
+                background-color: #eee;
+                border-radius: 10px;
+                padding: 10px;
+            }
+        }
+
+        &_userMessage {
+            display: flex;
+            // max-width: 700px;
+            flex-direction: row-reverse;
+            margin: 10px 0;
+
+            &_avatarBox {
+                margin-left: 10px;
+            }
+
+            &_content {
+                background-color: rgb(2, 166, 0);
+                color: #fff;
+                border-radius: 10px;
+                padding: 10px;
+            }
+
+        }
+    }
+}

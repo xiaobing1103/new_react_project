@@ -149,3 +149,7 @@ table {
 :where(.css-dev-only-do-not-override-gzal6t).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
   background-image: linear-gradient(to right, rgb(174, 25, 25) 0%, rgb(203, 18, 18) 51%, rgb(237, 9, 9) 100%);
 }
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-card .ant-card-body {
+  padding: 15px !important;
+}
