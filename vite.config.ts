@@ -1,17 +1,17 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import { resolve } from 'path';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { resolve } from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
     // outDir: 'build/client'
-    outDir: 'dist'
+    outDir: "dist",
   },
   resolve: {
     alias: {
-      '@': resolve(__dirname, './src')
-    }
+      "@": resolve(__dirname, "./src"),
+    },
   },
   css: {
     preprocessorOptions: {
@@ -19,8 +19,11 @@ export default defineConfig({
         modifyVars: {
           // hack: `true; @import (reference) "${resolve('src/styles/index.less')}";`,
         },
-        javascriptEnabled: true
-      }
+        javascriptEnabled: true,
+      },
     },
-  }
-})
+  },
+  server: {
+    port: 8888,
+  },
+});

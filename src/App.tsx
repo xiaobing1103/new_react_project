@@ -1,13 +1,12 @@
-
-
-import Report from './pages/report'
+import Down from "./pages/down";
+// import Report from "./pages/report";
 function App() {
-
   return (
     <>
-      <Report />
+      {/* <Report /> */}
+      <Down></Down>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

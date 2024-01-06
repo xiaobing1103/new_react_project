@@ -1,0 +1,353 @@
+
+* {
+    list-style: none;
+  }
+  .wrap {
+    position: relative;
+    //   padding: 0 15%;
+    &_content {
+      margin: 0 10%;
+      margin-top: 100px;
+  
+      &_downloadIntroduce {
+        &_main {
+          position: relative;
+          &_p1 {
+            color: #2f2f2f;
+            font-weight: bold;
+            font-size: 50px;
+          }
+          &_p2 {
+            color: #2f2f2f;
+            font-size: 50px;
+          }
+          &_p3 {
+            color: #1ad3be;
+            font-weight: bold;
+            font-size: 40px;
+          }
+          &_p4 {
+            color: #2c4554;
+            opacity: 0.5;
+            margin-top: 15px;
+            font-size: 15px;
+            line-height: 26px;
+            max-width: 550px;
+          }
+          &_downloadAddress {
+            margin-top: 30px;
+            &_android {
+              background: #0f2420;
+              display: inline-block;
+              height: 55px;
+              line-height: 55px;
+              color: white;
+              font-size: 16px;
+              cursor: pointer;
+              padding-left: 55px;
+              padding-right: 55px;
+            }
+            &_windows {
+              margin-left: 20px;
+              font-size: 16px;
+              display: inline-block;
+              height: 55px;
+              line-height: 55px;
+              cursor: pointer;
+              color: #0f2420;
+            }
+          }
+          &_downloadDevice {
+            height: 20px;
+            line-height: 20px;
+            margin-top: 50px;
+            background: url('../../../../assets/images/download/success.png') no-repeat left center;
+            background-size: 20px;
+            padding-left: 30px;
+            color: #0f2420;
+          }
+          &_downloadBanner {
+            width: 1000px;
+            position: absolute;
+            right: -100px;
+            top: -300px;
+            //   z-index: -1;
+          }
+          &_downloadBannerm {
+            width: 100px;
+            position: absolute;
+            right: -100px;
+            top: -300px;
+            //   z-index: -1;
+          }
+        }
+      }
+      &_downloadMore {
+        margin-top: 300px;
+        padding: 100px 30px;
+        text-align: center;
+        background: url('../../../../assets/images/download/d-bg.png') no-repeat center;
+        &_dText {
+          height: 100px;
+        }
+        &_dQrcode {
+          height: 150px;
+          margin-top: 50px;
+        }
+        &_dPhone {
+          margin: 0 30px;
+          background: #41c454 !important;
+          border-radius: 20px;
+          padding: 15px;
+        }
+        &_dAndroid,
+        &_dPhone,
+        &_dWindows {
+          height: 60px;
+          width: 210px;
+          display: inline-block;
+          overflow: hidden;
+          background: white;
+          border-radius: 20px;
+          padding: 15px;
+  
+          img {
+            max-height: 100%;
+          }
+        }
+      }
+      &_igmDots {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        height: 200px;
+        //   z-index: -1;
+      }
+    }
+  }
+  
+  .introduce_ai{
+    overflow: hidden;
+    margin-top: 50px;
+    /*margin-bottom: 100px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      &_main{
+        &_p1{
+          padding: 0 10px;
+          color: #2e2d2d;
+          font-size: 38px;
+          display: inline-block;
+          margin-top: 30px;
+          font-weight: bold;
+          background: url('@/assets/images/draw/piece-title.png') no-repeat center bottom;
+          background-size: 100%;
+        }
+        &_banner{
+          height: 700px;
+          float: right;
+          text-align: right;
+        }
+        &_p2{
+          padding: 0 10px;
+          color: #545454;
+          opacity: 0.5;
+          margin-top: 15px;
+          font-size: 15px;
+          line-height: 26px;
+          max-width: 550px;
+        }
+        &_p3{
+          padding: 0 10px;
+          color: #545454;
+          opacity: 0.5;
+          margin-top: 15px;
+          font-size: 15px;
+          line-height: 26px;
+          max-width: 550px;
+        }
+      }
+  }
+
+
+  .introduce_draw{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_drawBanner{
+      height: 700px;
+      float: left;
+      text-align: left;
+    }
+    &_main{
+      &_p1{
+        color: #2e2d2d;
+        font-size: 38px;
+        display: inline-block;
+        margin-top: 30px;
+        font-weight: bold;
+        background: url('@/assets/images/draw/piece-title.png') no-repeat center bottom;
+        background-size: 100%;
+      }
+      &_p2{
+        color: #545454;
+        opacity: 0.5;
+        margin-top: 15px;
+        font-size: 15px;
+        line-height: 26px;
+        max-width: 550px;
+      }
+      &_p3{
+        color: #545454;
+        opacity: 0.5;
+        margin-top: 15px;
+        font-size: 15px;
+        line-height: 26px;
+        max-width: 550px;
+      }
+    }
+  }
+  .introduceDrawBanner{
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    &_conts{
+      // width: 100vh;
+    }
+    img{
+      width: 288px !important;
+      height: 431px;
+    }
+    ul{
+      li{
+        float: left;
+        width: 25%;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+
+  .introducePlugIn {
+    overflow: hidden;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_main {
+        // width: 100vw;
+        &_p1{
+            padding: 0 10px;
+            color: #2e2d2d;
+            font-size: 38px;
+            display: inline-block;
+            margin-top: 30px;
+            font-weight: bold;
+            background: url(@/assets/images/draw/piece-title.png) no-repeat center bottom;
+            background-size: 100%;
+        }
+        &_p2{
+            padding: 0 10px;
+            color: #545454;
+            opacity: 0.5;
+            margin-top: 15px;
+            font-size: 15px;
+            line-height: 26px;
+            max-width: 550px;
+        }
+        &_p3{
+            padding: 0 10px;
+            color: #545454;
+            opacity: 0.5;
+            margin-top: 15px;
+            font-size: 15px;
+            line-height: 26px;
+            max-width: 550px;
+        }
+
+      }
+    &_banner {
+        // height: 300px;
+        float: right;
+        text-align: right;
+    }
+  }
+  
+.introduce_market{
+  overflow: hidden;
+  /*margin-top: 200px;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // width: 100vw;
+  &_banner{
+    height: 608px;
+    // width: 100vw;
+    display: flex;
+    justify-content: center;
+    left: 15px;
+    position: relative;
+    left: 10px;
+  }
+  &_main{
+    // width: 100vw;
+    &_p1{
+      padding: 0 10px;
+      color: #2e2d2d;
+      font-size: 38px;
+      display: inline-block;
+      margin-top: 30px;
+      font-weight: bold;
+      background: url('@/assets/images/draw/piece-title.png') no-repeat center bottom;
+      background-size: 100%;
+    }
+    &_p2{
+      padding: 0 10px;
+      color: #545454;
+      opacity: 0.5;
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 26px;
+      max-width: 550px;
+    }
+  }
+}
+.introduce_cosplay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_main{
+    &_p1{
+      padding: 0 10px;
+      color: #2e2d2d;
+      font-size: 38px;
+      display: inline-block;
+      margin-top: 30px;
+      font-weight: bold;
+      background: url('@/assets/images/draw/piece-title.png') no-repeat center bottom;
+      background-size: 100%;
+    }
+    &_p2{
+      // width: 100vw;
+      padding: 0 10px;
+      color: #545454;
+      opacity: 0.5;
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 26px;
+      max-width: 550px;
+    }
+  }
+  &_banner{
+    height: 608px;
+    // width: 100vw;
+    padding: 15px;
+  }
+}
