@@ -81,7 +81,7 @@
 
     @media screen and (min-width: 0px) and (max-width: 700px) {
       padding: 0 4%;
-      margin-top: 173px;
+      margin-top: 122px;
     }
 
     &_downloadIntroduce {
@@ -726,16 +726,24 @@
     display: flex;
     overflow: hidden;
 
+    &_card22 {
+      display: none;
 
+      @media screen and (min-width: 0px) and (max-width: 700px) {
+        display: block;
+        margin: 10px 0;
+      }
+    }
 
     &_card {
       height: 200px;
       margin: 0 5px;
 
       @media screen and (min-width: 0px) and (max-width: 700px) {
-        margin: 50px  5px;
+        margin: 50px 5px;
         width: 300px;
         height: 150px;
+        display: none;
       }
     }
   }
@@ -824,5 +832,71 @@
   @media screen and (min-width: 0px) and (max-width: 700px) {
     display: block;
     height: 300px;
+  }
+}
+
+.downloadNumber {
+  padding-left: 10%;
+  padding-right: 10%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+
+  @media screen and (min-width: 0px) and (max-width: 700px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+
+  }
+
+  li {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+      margin: 10px 0;
+
+    }
+
+  }
+
+  &_vale {
+    background: linear-gradient(to right, #F6D365, #FDA085);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+  }
+
+  &_vale2 {
+    background: linear-gradient(to right, #F093FB, #F5576C);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+  }
+
+  &_vale3 {
+    background: linear-gradient(to right, #43E97B, #38F9D7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+  }
+
+  &_vale4 {
+    background: linear-gradient(to right, #4FACFE, #00F2FE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+  }
+
+  &_name {
+    color: #B1B5B7;
+    margin-top: 5px;
+    font-size: 16px;
   }
 }

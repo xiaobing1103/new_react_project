@@ -25,14 +25,7 @@ import "swiper/css/autoplay";
 import { RightOutlined } from "@ant-design/icons";
 import { Card, Carousel, Col, Row } from "antd";
 export default function Down() {
-  const contentStyle: React.CSSProperties = {
-    margin: 0,
-    height: '160px',
-    color: '#fff',
-    lineHeight: '160px',
-    textAlign: 'center',
-    background: '#364d79',
-  };
+
 
   return (
     <div className={style.wrap}>
@@ -54,11 +47,8 @@ export default function Down() {
       </div>
 
 
-
-
-
-
       <div className={style.wrap_content}>
+
         <div className={style.wrap_content_downloadIntroduce}>
           <div className={style.wrap_content_downloadIntroduce_main}>
             <p className={style.wrap_content_downloadIntroduce_main_p1}>
@@ -129,6 +119,24 @@ export default function Down() {
         </div>
 
         <div className={style.wrap_content_downloadMore}>
+          <ul className={style.downloadNumber}>
+            <li>
+              <span className={style.downloadNumber_vale}>10万＋</span>
+              <span className={style.downloadNumber_name}>DUA活跃</span>
+            </li>
+            <li>
+              <span className={style.downloadNumber_vale2}>600万＋</span>
+              <span className={style.downloadNumber_name}>日均需求</span>
+            </li>
+            <li>
+              <span className={style.downloadNumber_vale3}>800万＋</span>
+              <span className={style.downloadNumber_name}>安装量</span>
+            </li>
+            <li>
+              <span className={style.downloadNumber_vale4}>500万＋</span>
+              <span className={style.downloadNumber_name}>注册账户</span>
+            </li>
+          </ul>
           <div className={style.introduce_ai}>
             <div className={style.introduce_ai_main}>
               <p className={style.introduce_ai_main_p1}>全能AI平台</p>
@@ -449,6 +457,63 @@ export default function Down() {
               </div>
 
             </Carousel>
+            <Card className={style.Carousel_box_card22}>
+              <div className={style.cardBox}>
+                <p className={style.cardBox_top}>AI绘画流程</p>
+                <div className={style.cardBox_middle} >
+                  <img className={style.cardBox_middle_img1} src='http://down2.ai1foo.com/images/classify.png' />
+                  <span className={style.cardBox_middle_span1}>未分类</span>
+                  <img className={style.cardBox_middle_img2} src='http://down2.ai1foo.com/images/time.png' />
+                  <span className={style.cardBox_middle_span2}>今天</span>
+                  <img className={style.cardBox_middle_img3} src='http://down2.ai1foo.com/images/see.png' />
+                  <span className={style.cardBox_middle_span3}>3888</span>
+                </div>
+                <p className={style.cardBox_bottom} >
+                  <span>
+                    一、提示词 提示词 (Prompt) 是 种用于与AI
+                    人工智能模型交互的语言，它用来告诉模型需要生成什么样的内容或图像。在图像..
+                  </span>
+                </p>
+              </div>
+            </Card>
+            <Card className={style.Carousel_box_card22}>
+              <div className={style.cardBox}>
+                <p className={style.cardBox_top}>AI绘画流程</p>
+                <div className={style.cardBox_middle} >
+                  <img className={style.cardBox_middle_img1} src='http://down2.ai1foo.com/images/classify.png' />
+                  <span className={style.cardBox_middle_span1}>未分类</span>
+                  <img className={style.cardBox_middle_img2} src='http://down2.ai1foo.com/images/time.png' />
+                  <span className={style.cardBox_middle_span2}>今天</span>
+                  <img className={style.cardBox_middle_img3} src='http://down2.ai1foo.com/images/see.png' />
+                  <span className={style.cardBox_middle_span3}>3888</span>
+                </div>
+                <p className={style.cardBox_bottom} >
+                  <span>
+                    一、提示词 提示词 (Prompt) 是 种用于与AI
+                    人工智能模型交互的语言，它用来告诉模型需要生成什么样的内容或图像。在图像..
+                  </span>
+                </p>
+              </div>
+            </Card>
+            <Card className={style.Carousel_box_card22}>
+              <div className={style.cardBox}>
+                <p className={style.cardBox_top}>AI绘画流程</p>
+                <div className={style.cardBox_middle} >
+                  <img className={style.cardBox_middle_img1} src='http://down2.ai1foo.com/images/classify.png' />
+                  <span className={style.cardBox_middle_span1}>未分类</span>
+                  <img className={style.cardBox_middle_img2} src='http://down2.ai1foo.com/images/time.png' />
+                  <span className={style.cardBox_middle_span2}>今天</span>
+                  <img className={style.cardBox_middle_img3} src='http://down2.ai1foo.com/images/see.png' />
+                  <span className={style.cardBox_middle_span3}>3888</span>
+                </div>
+                <p className={style.cardBox_bottom} >
+                  <span>
+                    一、提示词 提示词 (Prompt) 是 种用于与AI
+                    人工智能模型交互的语言，它用来告诉模型需要生成什么样的内容或图像。在图像..
+                  </span>
+                </p>
+              </div>
+            </Card>
           </div>
 
         </div>
