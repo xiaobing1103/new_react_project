@@ -1,304 +1,255 @@
-
 * {
-    list-style: none;
+  list-style: none;
+}
+
+.wrap {
+
+  @media screen and (min-width: 0px) and (max-width: 700px) {}
+
+  //   padding: 0 15%;
+  &_header {
+    background: white;
+    /* position: relative; */
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    // width: 100vw;
+    // padding: 0 15%;
+    line-height: 56px;
+    top: 0;
+    border-block-end: 1px solid rgba(5, 5, 5, 0.06);
+
+    @media screen and (min-width: 0px) and (max-width: 700px) {}
+
+    &_pc {
+      padding: 0 15%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between !important;
+
+      @media screen and (min-width: 0px) and (max-width: 700px) {
+        padding: 0 4%;
+      }
+
+      &_logo {
+        height: 80px;
+        display: flex;
+        align-items: center;
+
+        img {
+          height: 40px;
+          width: 40px;
+        }
+
+        &_logoName {
+          font-weight: 600;
+          color: black;
+          font-size: 30px;
+          margin-inline-start: 5px;
+        }
+      }
+
+      &_main {
+        display: flex;
+        align-items: center;
+
+        &_actives {
+          margin-left: 50px;
+
+          &_notlogin {
+            display: inline-block;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 30px;
+            padding: 0 20px;
+            background: linear-gradient(to right, #0BB4E3, #1DDAB8);
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            transition-duration: 0.5s;
+          }
+        }
+
+      }
+    }
   }
-  .wrap {
-    position: relative;
-    //   padding: 0 15%;
-    &_content {
-      margin: 0 10%;
-      margin-top: 100px;
-  
-      &_downloadIntroduce {
-        &_main {
-          position: relative;
-          &_p1 {
-            color: #2f2f2f;
-            font-weight: bold;
-            font-size: 50px;
+
+  &_content {
+    padding: 0 10%;
+    padding-top: 173px;
+
+
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+      padding: 0 4%;
+      margin-top: 173px;
+    }
+
+    &_downloadIntroduce {
+      &_main {
+        position: relative;
+
+        &_p1 {
+          color: #2f2f2f;
+          font-weight: bold;
+          font-size: 50px;
+        }
+
+        &_p2 {
+          color: #2f2f2f;
+          font-size: 50px;
+        }
+
+        &_p3 {
+          color: #1ad3be;
+          font-weight: bold;
+          font-size: 40px;
+        }
+
+        &_p4 {
+          color: #2c4554;
+          opacity: 0.5;
+          margin-top: 15px;
+          font-size: 15px;
+          line-height: 26px;
+          max-width: 550px;
+        }
+
+        &_downloadAddress {
+          margin-top: 30px;
+
+          &_android {
+            background: #0f2420;
+            display: inline-block;
+            height: 55px;
+            line-height: 55px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            padding-left: 55px;
+            padding-right: 55px;
           }
-          &_p2 {
-            color: #2f2f2f;
-            font-size: 50px;
-          }
-          &_p3 {
-            color: #1ad3be;
-            font-weight: bold;
-            font-size: 40px;
-          }
-          &_p4 {
-            color: #2c4554;
-            opacity: 0.5;
-            margin-top: 15px;
-            font-size: 15px;
-            line-height: 26px;
-            max-width: 550px;
-          }
-          &_downloadAddress {
-            margin-top: 30px;
-            &_android {
-              background: #0f2420;
-              display: inline-block;
-              height: 55px;
-              line-height: 55px;
-              color: white;
-              font-size: 16px;
-              cursor: pointer;
-              padding-left: 55px;
-              padding-right: 55px;
-            }
-            &_windows {
-              margin-left: 20px;
-              font-size: 16px;
-              display: inline-block;
-              height: 55px;
-              line-height: 55px;
-              cursor: pointer;
-              color: #0f2420;
-            }
-          }
-          &_downloadDevice {
-            height: 20px;
-            line-height: 20px;
-            margin-top: 50px;
-            background: url('../../../../assets/images/download/success.png') no-repeat left center;
-            background-size: 20px;
-            padding-left: 30px;
+
+          &_windows {
+            margin-left: 20px;
+            font-size: 16px;
+            display: inline-block;
+            height: 55px;
+            line-height: 55px;
+            cursor: pointer;
             color: #0f2420;
           }
-          &_downloadBanner {
-            width: 1000px;
-            position: absolute;
-            right: -100px;
-            top: -300px;
-            //   z-index: -1;
-          }
-          &_downloadBannerm {
-            width: 100px;
-            position: absolute;
-            right: -100px;
-            top: -300px;
-            //   z-index: -1;
-          }
         }
-      }
-      &_downloadMore {
-        margin-top: 300px;
-        padding: 100px 30px;
-        text-align: center;
-        background: url('../../../../assets/images/download/d-bg.png') no-repeat center;
-        &_dText {
-          height: 100px;
-        }
-        &_dQrcode {
-          height: 150px;
+
+        &_downloadDevice {
+          height: 20px;
+          line-height: 20px;
           margin-top: 50px;
+          background: url('http://file.1foo.com/2023/10/26/2a5a46f5ff7ea5bf5849f80a79949a65.png') no-repeat left center;
+          background-size: 20px;
+          padding-left: 30px;
+          color: #0f2420;
         }
-        &_dPhone {
-          margin: 0 30px;
-          background: #41c454 !important;
-          border-radius: 20px;
-          padding: 15px;
-        }
-        &_dAndroid,
-        &_dPhone,
-        &_dWindows {
-          height: 60px;
-          width: 210px;
-          display: inline-block;
-          overflow: hidden;
-          background: white;
-          border-radius: 20px;
-          padding: 15px;
-  
-          img {
-            max-height: 100%;
+
+        &_downloadBanner {
+          width: 1000px;
+          position: absolute;
+          right: -100px;
+          top: -300px;
+
+          //   z-index: -1;
+          @media screen and (min-width: 0px) and (max-width: 700px) {
+            display: none;
+            // width: 100vw;
+            // top: -38px;
+            // right:  -0px;
           }
         }
-      }
-      &_igmDots {
-        position: absolute;
-        top: 10px;
-        left: 0;
-        height: 200px;
-        //   z-index: -1;
+
+        &_downloadBannerm {
+          width: 100px;
+          position: absolute;
+          right: -100px;
+          top: -300px;
+          //   z-index: -1;
+        }
       }
     }
-  }
-  
-  .introduce_ai{
-    overflow: hidden;
-    margin-top: 50px;
-    /*margin-bottom: 100px;*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-      &_main{
-        &_p1{
-          padding: 0 10px;
-          color: #2e2d2d;
-          font-size: 38px;
-          display: inline-block;
-          margin-top: 30px;
-          font-weight: bold;
-          background: url('@/assets/images/draw/piece-title.png') no-repeat center bottom;
-          background-size: 100%;
-        }
-        &_banner{
-          height: 700px;
-          float: right;
-          text-align: right;
-        }
-        &_p2{
-          padding: 0 10px;
-          color: #545454;
-          opacity: 0.5;
-          margin-top: 15px;
-          font-size: 15px;
-          line-height: 26px;
-          max-width: 550px;
-        }
-        &_p3{
-          padding: 0 10px;
-          color: #545454;
-          opacity: 0.5;
-          margin-top: 15px;
-          font-size: 15px;
-          line-height: 26px;
-          max-width: 550px;
-        }
+
+    &_downloadMore {
+      margin-top: 300px;
+      padding: 100px 30px;
+      text-align: center;
+
+      // background: url('@/assets/images/download/d-bg.png') no-repeat center;
+      @media screen and (min-width: 0px) and (max-width: 700px) {
+        padding: 0;
+        margin-top: 100px;
       }
-  }
 
+      &_dText {
+        height: 100px;
+      }
 
-  .introduce_draw{
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &_drawBanner{
-      height: 700px;
-      float: left;
-      text-align: left;
-    }
-    &_main{
-      &_p1{
-        color: #2e2d2d;
-        font-size: 38px;
+      &_dQrcode {
+        height: 150px;
+        margin-top: 50px;
+      }
+
+      &_dPhone {
+        margin: 0 30px;
+        background: #41c454 !important;
+        border-radius: 20px;
+        padding: 15px;
+      }
+
+      &_dAndroid,
+      &_dPhone,
+      &_dWindows {
+        height: 60px;
+        width: 210px;
         display: inline-block;
-        margin-top: 30px;
-        font-weight: bold;
-        background: url('@/assets/images/draw/piece-title.png') no-repeat center bottom;
-        background-size: 100%;
+        overflow: hidden;
+        background: white;
+        border-radius: 20px;
+        padding: 15px;
+
+        img {
+          max-height: 100%;
+        }
       }
-      &_p2{
-        color: #545454;
-        opacity: 0.5;
-        margin-top: 15px;
-        font-size: 15px;
-        line-height: 26px;
-        max-width: 550px;
-      }
-      &_p3{
-        color: #545454;
-        opacity: 0.5;
-        margin-top: 15px;
-        font-size: 15px;
-        line-height: 26px;
-        max-width: 550px;
-      }
+    }
+
+    &_igmDots {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      height: 200px;
+      //   z-index: -1;
     }
   }
-  .introduceDrawBanner{
-    margin-top: 100px;
-    position: relative;
-    overflow: hidden;
-    &_conts{
-      // width: 100vh;
-    }
-    img{
-      width: 288px !important;
-      height: 431px;
-    }
-    ul{
-      li{
-        float: left;
-        width: 25%;
-        padding-left: 10px;
-        padding-right: 10px;
-        cursor: pointer;
-        img{
-          max-width: 100%;
-        }
-      }
-    }
-  }
+}
 
-
-  .introducePlugIn {
-    overflow: hidden;
-    margin-top: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &_main {
-        // width: 100vw;
-        &_p1{
-            padding: 0 10px;
-            color: #2e2d2d;
-            font-size: 38px;
-            display: inline-block;
-            margin-top: 30px;
-            font-weight: bold;
-            background: url(@/assets/images/draw/piece-title.png) no-repeat center bottom;
-            background-size: 100%;
-        }
-        &_p2{
-            padding: 0 10px;
-            color: #545454;
-            opacity: 0.5;
-            margin-top: 15px;
-            font-size: 15px;
-            line-height: 26px;
-            max-width: 550px;
-        }
-        &_p3{
-            padding: 0 10px;
-            color: #545454;
-            opacity: 0.5;
-            margin-top: 15px;
-            font-size: 15px;
-            line-height: 26px;
-            max-width: 550px;
-        }
-
-      }
-    &_banner {
-        // height: 300px;
-        float: right;
-        text-align: right;
-    }
-  }
-  
-.introduce_market{
+.introduce_ai {
   overflow: hidden;
-  /*margin-top: 200px;*/
+  margin-top: 50px;
+  /*margin-bottom: 100px;*/
   display: flex;
   align-items: center;
   justify-content: center;
-  // width: 100vw;
-  &_banner{
-    height: 608px;
-    // width: 100vw;
-    display: flex;
-    justify-content: center;
-    left: 15px;
-    position: relative;
-    left: 10px;
+
+
+  @media screen and (min-width: 0px) and (max-width: 700px) {
+    overflow: inherit;
+    margin: 20px 0;
   }
-  &_main{
-    // width: 100vw;
-    &_p1{
+
+  &_main {
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+
+      // background-color: #0BB4E3;
+    }
+
+    &_p1 {
       padding: 0 10px;
       color: #2e2d2d;
       font-size: 38px;
@@ -308,7 +259,30 @@
       background: url('@/assets/images/draw/piece-title.png') no-repeat center bottom;
       background-size: 100%;
     }
-    &_p2{
+
+    &_banner {
+      height: 700px;
+      float: right;
+      text-align: right;
+
+      @media screen and (min-width: 0px) and (max-width: 700px) {
+        width: 100%;
+        height: 300px;
+        margin: 20px 0;
+      }
+    }
+
+    &_p2 {
+      padding: 0 10px;
+      color: #545454;
+      opacity: 0.5;
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 26px;
+      max-width: 550px;
+    }
+
+    &_p3 {
       padding: 0 10px;
       color: #545454;
       opacity: 0.5;
@@ -319,12 +293,195 @@
     }
   }
 }
-.introduce_cosplay{
+
+
+.introduce_draw {
+  overflow: hidden;
   display: flex;
-  justify-content: center;
   align-items: center;
-  &_main{
-    &_p1{
+  justify-content: center;
+
+  @media screen and (min-width: 0px) and (max-width: 700px) {
+    // width: 100vw;
+    // height: 300px;
+    // margin: 20px 0;
+    flex-direction: column-reverse;
+
+  }
+
+  &_drawBanner {
+    height: 700px;
+    float: left;
+    text-align: left;
+
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+      width: 100%;
+      height: 450px;
+      margin: 20px 0;
+      flex-direction: column;
+    }
+  }
+
+  &_main {
+    &_p1 {
+      color: #2e2d2d;
+      font-size: 38px;
+      display: inline-block;
+      margin-top: 30px;
+      font-weight: bold;
+      background: url('@/assets/images/draw/piece-title.png') no-repeat center bottom;
+      background-size: 100%;
+    }
+
+    &_p2 {
+      color: #545454;
+      opacity: 0.5;
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 26px;
+      max-width: 550px;
+    }
+
+    &_p3 {
+      color: #545454;
+      opacity: 0.5;
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 26px;
+      max-width: 550px;
+    }
+  }
+}
+
+.introduceDrawBanner {
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+
+  &_conts {
+    // width: 100vh;
+  }
+
+  img {
+    width: 288px !important;
+    height: 431px;
+
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+      width: 100%;
+      height: 400px;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+  }
+
+  ul {
+    li {
+      float: left;
+      width: 25%;
+      padding-left: 10px;
+      padding-right: 10px;
+      cursor: pointer;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+
+.introducePlugIn {
+  overflow: hidden;
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 0px) and (max-width: 700px) {
+    flex-direction: column;
+  }
+
+  &_main {
+
+    // width: 100vw;
+    &_p1 {
+      padding: 0 10px;
+      color: #2e2d2d;
+      font-size: 38px;
+      display: inline-block;
+      margin-top: 30px;
+      font-weight: bold;
+      background: url(@/assets/images/draw/piece-title.png) no-repeat center bottom;
+      background-size: 100%;
+    }
+
+    &_p2 {
+      padding: 0 10px;
+      color: #545454;
+      opacity: 0.5;
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 26px;
+      max-width: 550px;
+    }
+
+    &_p3 {
+      padding: 0 10px;
+      color: #545454;
+      opacity: 0.5;
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 26px;
+      max-width: 550px;
+    }
+
+  }
+
+  &_banner {
+    // height: 300px;
+    float: right;
+    text-align: right;
+
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+      width: 100%;
+      height: 380px;
+      margin: 20px 0;
+    }
+  }
+}
+
+.introduce_market {
+  overflow: hidden;
+  /*margin-top: 200px;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 0px) and (max-width: 700px) {
+    flex-direction: column-reverse;
+  }
+
+  // width: 100vw;
+  &_banner {
+    height: 608px;
+    // width: 100vw;
+    display: flex;
+    justify-content: center;
+    left: 15px;
+    position: relative;
+    left: 10px;
+
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+      width: 100%;
+      height: 380px;
+      margin: 20px 0;
+    }
+  }
+
+  &_main {
+
+    // width: 100vw;
+    &_p1 {
       padding: 0 10px;
       color: #2e2d2d;
       font-size: 38px;
@@ -334,7 +491,42 @@
       background: url('@/assets/images/draw/piece-title.png') no-repeat center bottom;
       background-size: 100%;
     }
-    &_p2{
+
+    &_p2 {
+      padding: 0 10px;
+      color: #545454;
+      opacity: 0.5;
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 26px;
+      max-width: 550px;
+    }
+  }
+}
+
+.introduce_cosplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 0px) and (max-width: 700px) {
+    flex-direction: column;
+  }
+
+  &_main {
+    &_p1 {
+      padding: 0 10px;
+      color: #2e2d2d;
+      font-size: 38px;
+      display: inline-block;
+      margin-top: 30px;
+      font-weight: bold;
+      background: url('@/assets/images/draw/piece-title.png') no-repeat center bottom;
+      background-size: 100%;
+
+    }
+
+    &_p2 {
       // width: 100vw;
       padding: 0 10px;
       color: #545454;
@@ -345,9 +537,292 @@
       max-width: 550px;
     }
   }
-  &_banner{
+
+  &_banner {
     height: 608px;
     // width: 100vw;
     padding: 15px;
+
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+      width: 100%;
+      height: 380px;
+      margin: 20px 0;
+    }
+  }
+}
+
+.introduce_robot {
+  margin-top: 250px;
+  margin-bottom: 350px;
+
+  @media screen and (min-width: 0px) and (max-width: 700px) {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+
+  &_main {
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+      flex-direction: column;
+    }
+
+    &_p1 {
+      color: #00bb98;
+      font-size: 16px;
+    }
+
+    &_p2 {
+      color: #2e2d2d;
+      font-size: 38px;
+      display: inline-block;
+      margin-top: 30px;
+      font-weight: bold;
+      background: url('@/assets/images/draw/piece-title.png') no-repeat center bottom;
+      background-size: 100%;
+    }
+
+    &_p3 {
+      color: #2e2d2d;
+      font-size: 36px;
+      line-height: 40px;
+      margin-top: 10px;
+    }
+
+    &_p4 {
+      color: #545454;
+      opacity: 0.5;
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 26px;
+      max-width: 550px;
+    }
+
+    &_robotBanner {
+      width: 800px;
+
+      // position: absolute;
+      @media screen and (min-width: 0px) and (max-width: 700px) {
+        width: 100%;
+        height: 380px;
+        margin: 20px 0;
+      }
+    }
+  }
+}
+
+.introduceScene {
+  width: 100%;
+  background: url('http://file.1foo.com/2023/10/14/c184d768e35bfc2685620c5e2bda7b46.png') no-repeat center;
+  background-size: 100%;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+
+  @media screen and (min-width: 0px) and (max-width: 700px) {
+    color: rgb(0, 0, 0);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    height: 400px;
+    background: url('http://file.1foo.com/2023/10/14/c184d768e35bfc2685620c5e2bda7b46.png') repeat center;
+  }
+
+
+  &_box {
+    padding: 70px;
+
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+      padding: 10px;
+    }
+  }
+
+  &_p1 {
+    font-size: 29px;
+
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+      font-size: 20px;
+    }
+  }
+
+  &_p2 {
+    font-size: 12px;
+    text-align: left;
+    line-height: 30px;
+    padding: 0 15% 0 15%;
+    margin-top: 30px;
+
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+      // font-size: 20px;
+      padding: 0;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+  }
+
+  &_p3 {
+    font-size: 12px;
+    line-height: 30px;
+  }
+
+  &_p4 {
+    font-size: 12px;
+    line-height: 30px;
+  }
+
+  &_p5 {
+    color: white;
+    opacity: 0.5;
+  }
+
+  &_user {
+    display: inline-block;
+    overflow: hidden;
+    text-align: left;
+    margin-top: 50px;
+
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+      display: flex;
+    }
+
+    &_head {
+      height: 80px;
+      float: left;
+
+      @media screen and (min-width: 0px) and (max-width: 700px) {
+        height: 40px;
+        float: none;
+
+      }
+    }
+
+    &_describe {
+      margin-left: 30px;
+      float: right;
+      height: 100px;
+    }
+  }
+
+}
+
+.Carousel {
+  &_title {
+    color: #2E2D2D;
+    font-size: 30px;
+    display: inline-block;
+    font-weight: bold;
+    background: url(http://file.1foo.com/2023/10/26/7808570a6f1dd24a667cbebac0f22703.png) no-repeat center bottom;
+    background-size: 100%;
+    margin: 50px 0;
+  }
+
+
+  &_box {
+    display: flex;
+    overflow: hidden;
+
+
+
+    &_card {
+      height: 200px;
+      margin: 0 5px;
+
+      @media screen and (min-width: 0px) and (max-width: 700px) {
+        margin: 50px  5px;
+        width: 300px;
+        height: 150px;
+      }
+    }
+  }
+
+  &_box1 {
+    display: flex;
+    position: relative;
+    right: 200px;
+
+  }
+}
+
+
+.cardBox {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+
+  @media screen and (min-width: 0px) and (max-width: 700px) {
+    width: 250px;
+  }
+
+  &_top {
+    font-size: 28px;
+    display: flex;
+
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+      font-size: 16px;
+      font-weight: 700;
+      width: 100%;
+    }
+  }
+
+  &_middle {
+    margin: 20px 0 20px 0;
+    color: #858a9d;
+    display: flex;
+
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+      margin: 10px 0;
+      width: 100%;
+    }
+
+    &_img1 {
+      height: 20px;
+      vertical-align: middle;
+    }
+
+    &_img2 {
+      height: 20px;
+      vertical-align: middle;
+      margin-left: 15px;
+
+      @media screen and (min-width: 0px) and (max-width: 700px) {
+        margin-left: 5px;
+      }
+    }
+
+    &_img3 {
+      height: 20px;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+  }
+
+  &_bottom {
+    color: #858a9d;
+
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+  }
+}
+
+
+.downloadBanner {
+  display: none;
+  width: 100%;
+  height: 300px;
+  background: url(/src/assets/images/download/download-banner.png) -101px -139px no-repeat;
+  background-size: 164% 164%;
+
+  @media screen and (min-width: 0px) and (max-width: 700px) {
+    display: block;
+    height: 300px;
   }
 }
